@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../style/login.css">
+    <title>Document</title>
+</head>
+<body>
+    
+   <div class="container "> 
+    
+    <div class="row margin">
+     <div class="col-sm-12  ">
+        <h1 class=""> Login</h1>
+     <label for="">Name</label><br>
+      <input type="text"  ><br>
+        <label for="">Password</label><br>
+        
+   <input type="password" id="password">
+   <input type="checkbox" id="change password">
+   <label for="">Confirm Password</label><br>
+   <input type="password" id="c_pass">
+   <input type="checkbox" id="confirmshow">
+   <label id="msg"></label>
+                          
+                        </div>
+                    </div>
+                  </div>
+                
+</body>
+<script >
+    document.getElementById("change password").addEventListener("click",show)
+    function show(){
+        let x=document.getElementById("password")
+        if(x.type=="password"){
+            x.type="text";
+        }
+        else(
+            x.type="password"
+        )
+    }
+    document.getElementById("confirmshow").addEventListener("click",c_show)
+    function c_show(){
+        let y = document.getElementById("c_pass")
+        if(y.type=="c_pass"){
+            y.type="text";
+        }
+        else(
+            y.type="c_pass"
+        )
+    }
+
+    // $(document).ready(function(){
+    //     var pass=$("#password").val();
+    //     var c_pass=$("#c_pass").val();
+    //     if(pass==c_pass){
+    //         $("#msg").html("Password Correct");
+    //         $("#msg").css("color","Green")
+    //     }
+    // })
+
+</script>
+  
+</html>
+
+
+
+
+
+
+
+
