@@ -1,0 +1,17 @@
+.input{
+    width: 22%;
+    border-radius: 14px;
+
+}
+.margin{
+    margin-top: 23%;
+    margin-left: 27%;
+    border: 2px solid black;
+    border-radius: 14px;
+    width: 250px;
+    height: 350px;
+}
+.h1{
+    margin-left: 27%;
+    margin-top: 23%;
+}
